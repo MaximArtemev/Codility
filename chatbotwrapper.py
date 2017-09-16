@@ -1,11 +1,11 @@
 from chatterbot import ChatBot
 import pymorphy2
-import speech_recognition
+import speech_recognition as sr
 
 
 class PythonChatBot:
-    def __init__(self, threshold=0.5):
-        self.speech = speech_recognition.Recognizer()
+    def __init__(self, threshold=0.5, read_only=False):
+        self.speech = sr.Recognizer()
         self.morph = pymorphy2.MorphAnalyzer()
         self.bot = ChatBot('Norman',
                            storage_adapter="chatterbot.storage.SQLStorageAdapter",
@@ -20,17 +20,20 @@ class PythonChatBot:
                                }
                            ],
                            trainer='chatterbot.trainers.ListTrainer',
+                           read_only=read_only
         )
     
     def normalize_preprocessor(self, text):
-        return ' '.join([self.morph.parse(i)[0].normal_form for i in text.split()])
+        return ' '.join([self.morph.parse(i)[0].normal_form for i in text.lower().split()])
     
     
     def response_sound(self, path):
-        with speech_recognition.AudioFile(path) as source:
+        audio = ''
+        with sr.AudioFile(path) as source:
             audio = self.speech.record(source)
         try:
-            return self.response(self.speech.recognize_google(audio, language='ru'))
+            text = self.speech.recognize_google(audio, language='ru')
+            return self.response(text)
         except Exception as e:
             return ("Exception: "+str(e))
     
@@ -41,7 +44,8 @@ class PythonChatBot:
     
     def response(self, question):
         try:
-            return str(self.bot.get_response(question))
+            good_question = self.normalize_preprocessor(question)
+            return str(self.bot.get_response(good_question))
         except Exception as e:
             return ("Exception: "+str(e))
     
