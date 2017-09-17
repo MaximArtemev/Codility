@@ -3,7 +3,7 @@ Open Fights Codility 2017
 
 #### Semi-умный телеграм - ассистент банка Открытие.
 
-** Что он умеет? **
+** Что он умеет?
 
 Самое главное - он умеет обучаться
 
@@ -19,16 +19,16 @@ Open Fights Codility 2017
 Я сам пытался поработать с ним, но мне мешает то, что я абсолютно не знаком с тематикой банкинга.
 
 
-Но для примера давайте сравним текущего [бота банка Открытие из Facebook]('https://www.facebook.com/otkritie.bot/') и моего бота 
+Но для примера давайте сравним текущего [бота банка Открытие из Facebook](https://www.facebook.com/otkritie.bot/) и моего бота 
 
-[!image]('https://imgur.com/gallery/v1XdVaU')
+![image](https://imgur.com/gallery/v1XdVaU)
 
-[!image]('https://imgur.com/gallery/5vmHDyn')
+![image](https://imgur.com/gallery/5vmHDyn)
 
 Или например вот такое вот 
 
-[!image]('https://imgur.com/gallery/t89sI6l')
+![image](https://imgur.com/gallery/t89sI6l)
 
-[!image]('https://imgur.com/gallery/8Q6CH')
+![image](https://imgur.com/gallery/8Q6CH)
 
 Такие дела
