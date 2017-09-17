@@ -21,14 +21,14 @@ Open Fights Codility 2017
 
 Но для примера давайте сравним текущего [бота банка Открытие из Facebook](https://www.facebook.com/otkritie.bot/) и моего бота 
 
-![image](https://imgur.com/gallery/v1XdVaU "1")
+![image](https://i.imgur.com/v1XdVaU.png "1")
 
-![image](https://imgur.com/gallery/5vmHDyn "2")
+![image](https://i.imgur.com/5vmHDyn.png "2")
 
 Или например вот такое вот 
 
-![image](https://imgur.com/gallery/t89sI6l "3")
+![image](https://i.imgur.com/t89sI6l.png "3")
 
-![image](https://imgur.com/gallery/8Q6CH "4")
+![image](https://i.imgur.com/YBhiGSG.png "4")
 
 Такие дела
